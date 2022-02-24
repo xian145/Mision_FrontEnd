@@ -17,9 +17,61 @@
 
     <a href="https://github.com/LaunchX-InnovaccionVirtual/FrontEnd-Mision">Genera un link a donde quieras pero no lo manda a una nueva Tab</a>
     <a href="https://github.com/LaunchX-InnovaccionVirtual/FrontEnd-Mision" target="blank">Este si genera una nueva Tab</a>
-    <br> #para brincar linea, como un enter
+    <br> <!--para brincar linea, como un enter-->
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/640px-Git-logo.svg.png" alt="Git-logo">
 
     <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/640px-Git-logo.svg.png" alt=""></a>
+    <br><br>
+
+    <!--Entradas-->
+    <input type="text" name="input1" id="input1" value=""><br> <!--value es lo que va dentro la entrada, el nombre input1 es realmente una etiqueta-->
+    <label for="input1">Lo que ponga aqui ira como eqtiqueta en la entrada</label><br><br><!--las etiquetas pueden ir donde sea, no necesariamente abajo-->
+    
+    <input type="email" id="correo1" name="correo1"><br> <!--permite la entrada de solo correos, con un @ y .-->
+    <label for="correo1">Introduce tu correo</label><br><br>
+
+    <input type="password" name="contra1" id="contra1" minlength="8"><br> <!--da una minima cantidad de caracteres-->
+    <label for="contra1">Introduce tu contraseña</label><br><br>
+
+    <input type="tel" name="cel1" id="cel1" maxlength="10"><br> <!--maxlegth hace que le des un numero maximo caracteres y min para que ponga un minimo-->
+    <label for="cel1">Introduce tu numero de telefono</label><br><br>
+
+    <input type="url" name="url1" id="url1"><br> <!--valida que efectivamente sea un url viendo el formato-->
+    <label for="url1">Intorduce liga a pagina web</label><br><br>
+
+    <input type="checkbox" name="check1" id="check1" value="inglesss"> <!--no estoy seguro de que sirve el value aqui-->
+    <label for="check1">Inlges</label><br><!--hace que puedas seleccionar mas opciones, no es opcion unica, es una checkbox al fin de cuentas-->
+    <input type="checkbox" name="check2" id="check2" value="Español">
+    <label for="check2">Español</label><br>
+    <input type="checkbox" name="check3" id="check3" value="Aleman">
+    <label for="check3">Aleman</label><br><br>
+
+    <input type="color" name="color1" id="color1"><br>
+    <label for="color1">Introduce un color?</label><br><br> <!--No se si tenga alguna otra funcion, asumo que servira para cambiar colores en algo-->
+
+    <input type="date" name="fecha1" id="fecha1"><br>
+    <label for="fecha1">Introduce tu fecha de nacimiento</label><br>
+    <input type="datetime-local" name="dt1" id="dt1"><br> <!--este es para pedir una fecha y ademas una hora-->
+    <input type="week" name="w1" id="w1"><br> <!--para agarrar una semana completa, empieza en lunes y terminando en domingo-->
+    <input type="time" name="t1" id="t1"><br><!--agarra una hora-->
+    <input type="month" name="m1" id="m1"><br><br><!--agarra todo un mes entero-->
+
+    <input type="file" name="arch1" id="arch1" multiple><br><!--multiple nos sirve para dejar que suba mas de un solo archivo, si no esta solo podra introducir un archivo, podemos limitarlo a un tipo de archivo-->
+    <label for="arch1">Introduce un archivo</label><br><br><!--introduce un archivo, no le damos limite de peso-->
+
+    <input type="radio" name="lenguaje_favorito" id="HTML"><!--aqui todos comparte el "name", con la finalidad de indicar a html que todos forman parte del mismo conjunto, asi que solo podra elegir una sola de las 3-->
+    <label for="HTML">HTML</label><br>
+    <input type="radio" name="lenguaje_favorito" id="JS"><!--contrario a checkbox-->
+    <label for="JS">JS</label><br>
+    <input type="radio" name="lenguaje_favorito" id="CSS">
+    <label for="CSS">CSS</label><br><br>
+
+    <input type="range" name="rango1" id="rango1" min="0" max="100"><br> <!--pone una barra que va desde 0 a 100, aun no se como poner que valor esta seleccionado-->
+    <label for="rango1">Elije un valor entre 0 y 100</label><br><br>
+
+    <input type="reset"><br><!--resetea todo lo que pusimos pero se debe decir que es un formulario, aqui aun no se dice que es uno-->
+    <input type="submit"><br><!--es para enviar el formulario-->
+    <input type="button" name="boton1" id="boton1" value="boton1" onclick="alert('que onda, pa que mi picas?');"><br><!--para decirle que va a hacer cuadno le piquemos, es mas general--><!--onclick sirve para que haga algo tras picarle, un metodo al algo mas-->
+
 </body>
 </html>
