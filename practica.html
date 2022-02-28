@@ -18,15 +18,18 @@
     <a href="https://github.com/LaunchX-InnovaccionVirtual/FrontEnd-Mision">Genera un link a donde quieras pero no lo manda a una nueva Tab</a>
     <a href="https://github.com/LaunchX-InnovaccionVirtual/FrontEnd-Mision" target="blank">Este si genera una nueva Tab</a>
     <br> <!--para brincar linea, como un enter-->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/640px-Git-logo.svg.png" alt="Git-logo">
 
-    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/640px-Git-logo.svg.png" alt=""></a>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/640px-Git-logo.svg.png" alt="Git-logo" width="400px" height="200px"><br><!--esto se usa para poner imagenes de internet-->
+    <!--asi como se puso alt que es para poner una descripcion de la imagen podemos usar width y height para modificar el tamaño-->
+
+    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/640px-Git-logo.svg.png" alt=""></a><!--este es una imagen que tiene asociado un link-->
     <br><br>
 
     <!--Entradas-->
     <input type="text" name="input1" id="input1" value=""><br> <!--value es lo que va dentro la entrada, el nombre input1 es realmente una etiqueta-->
     <label for="input1">Lo que ponga aqui ira como eqtiqueta en la entrada</label><br><br><!--las etiquetas pueden ir donde sea, no necesariamente abajo-->
-    
+    <!--en for de la etiqueta va el id de lo que quieras etiquetar-->
+
     <input type="email" id="correo1" name="correo1"><br> <!--permite la entrada de solo correos, con un @ y .-->
     <label for="correo1">Introduce tu correo</label><br><br>
 
@@ -35,6 +38,9 @@
 
     <input type="tel" name="cel1" id="cel1" maxlength="10"><br> <!--maxlegth hace que le des un numero maximo caracteres y min para que ponga un minimo-->
     <label for="cel1">Introduce tu numero de telefono</label><br><br>
+
+    <input type="number" name="num1" id="num1" max="5" min="-5"><br><!--aqui podemos poner solo numeros, con min y max puedo dar valores maximos y minimos-->
+    <label for="num1">solo para poder poner numeros</label><br><br>
 
     <input type="url" name="url1" id="url1"><br> <!--valida que efectivamente sea un url viendo el formato-->
     <label for="url1">Intorduce liga a pagina web</label><br><br>
@@ -71,7 +77,55 @@
 
     <input type="reset"><br><!--resetea todo lo que pusimos pero se debe decir que es un formulario, aqui aun no se dice que es uno-->
     <input type="submit"><br><!--es para enviar el formulario-->
-    <input type="button" name="boton1" id="boton1" value="boton1" onclick="alert('que onda, pa que mi picas?');"><br><!--para decirle que va a hacer cuadno le piquemos, es mas general--><!--onclick sirve para que haga algo tras picarle, un metodo al algo mas-->
+    <input type="button" name="boton1" id="boton1" value="boton1" onclick="alert('que onda, pa que mi picas?');"><br><br><!--para decirle que va a hacer cuadno le piquemos, es mas general--><!--onclick sirve para que haga algo tras picarle, un metodo al algo mas-->
+
+    <hr><!--pone una linea de separacion-->
+
+    <h1>Etiquetas basicas</h1><br><br>
+   
+    <!--Agregar tablas-->
+
+    <table><!--asi se dice que lo que sigue es una tabla-->
+        <tr><!--table row, o sea, un renglon de la tabla-->
+            <th>Titulo 1</th><!--table header, que son los titulos de la tabla, en este caso estan en el primer renglon de nuestra tabla-->
+            <th>titulo 2</th>
+            <th>titulo 3</th>
+        </tr>
+        <tr><!--nuevo renglon-->
+            <td>abajo de titulo 1</td><!--table data, la informacion que va dentro de la tabla que ya no es el titulo-->
+            <td>abajo de titulo 2</td>
+            <td>abajo de titulo 3</td>
+        </tr>
+    </table><br><br>
+
+    <!--Listas-->
+
+    <ul><!--unordered list, lista sin orden, se representa con puntitos-->
+        <li>cosa 1</li><!--es la forma en la que agregamos elementos en la lista-->
+        <li>cosa 2</li>
+        <li>cosa 3</li>
+    </ul><br>
+
+    <ol><!--ordered list, listas ordenadas, se representa con numeros-->
+        <li>persona 1</li>
+        <li>persona 2</li>
+        <li>persona 3</li>
+    </ol><br>
+
+    <dl><!--datailed list, lista detallada-->
+        <dt>enchiladas</dt><!--esta es la forma en la que se ponen cosas en las listas detalladas-->
+        <dd>- tortilla con salsa bien buena</dd><!--detailed data, es la informacion correspondiente al dato de arriba, se pone con un tab abajo del objeto 1-->
+        <dt>pozole</dt>
+        <dd>- caldo bien bueno</dd>
+    </dl><br><br>
+
+    <hr><!--pone una linea de separacion-->
+
+    <h1>Selecionar de la lista</h1><br><br>
+    <select name="Algo" id="Algo1">
+        <option value="Cosa 1">Cosa 1</option>
+        <option value="Cosa 2">Cosa 2</option>
+    </select>
 
 </body>
 </html>
