@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout y Rutas</title>
+
+    <style>
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+
+        div:nth-child(2n) { /*Es un selector, que va de dos en dos*/
+            background-color: rgb(43, 226, 73);
+        }
+
+        .round_b {
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+        }
+
+        .round_t {
+            border-top-right-radius: 100%;
+        }
+
+        body {
+            background-color: blueviolet;
+            display: inline-flex;
+            justify-content: center; /*en el eje de las x*/
+            align-items: center; /*en el eje de las y*/
+            flex-wrap: wrap;
+            margin-top: 50px;
+        } /* esto permite que se muevan las cosas de manera automatica si la pantalla es mas chica */
+
+    </style>
+
+</head>
+<body>
+
+    <div class="round_t">a</div>
+    <div>b</div>
+    <div class="round_t">c</div>
+    <div class="round_b">d</div>
+    <div>e</div>
+    <div class="round_b">f</div>
+
+</body>
+</html>
