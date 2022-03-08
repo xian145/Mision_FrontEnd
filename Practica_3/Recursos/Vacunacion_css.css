@@ -1,0 +1,70 @@
+html, body{
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    background-color: rgb(34, 104, 7);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0; /*arriba a la izquiierda, ocupar 100%*/
+}
+
+.menu {
+    display: flex; /*lo vuelve flexible*/
+    justify-content: space-between; /*para separar a los extremos*/
+    position: fixed; /*para que siempre quede en esa posicion*/
+    width: 100%;
+    height: 170px;
+    background-color: rgba(255, 255, 255, 0.3);
+    align-items: center;
+    z-index: 100; /*poner por capas*/
+}
+
+.logo {
+    font-size: 30px;
+    padding-left: 90px; /*espacio de 90px a lado izq*/
+}
+
+.btn {
+    background-color: blue;
+    border: none;
+    padding: 20px 30px;
+    color: white;
+    text-align: center;
+    border-radius: 15px 50px 30px 5px; /*esquinas*/
+}
+
+.tbl {
+    border-spacing: 30px; /*espacio entre palabras*/
+    padding-right: 80px;
+}
+
+.sec{
+    display: flex;
+    background-color: chartreuse;
+    justify-content: center; /*para que los div dentro de la seccion esten centrados*/
+    z-index: 90;
+}
+
+.izq {
+    background-color: blueviolet;
+    width: 50%;
+}
+
+.der {
+    width: 50%;
+    background: url("./doctora.jpg") no-repeat center center; /*centrar horizonta y verticalmente*/
+    min-height: 700px;
+    background-size: cover;
+}
+
+.menu2 {
+    display: flex;
+    justify-content: space-between; /*para separar a los extremos*/
+    width: 80%;
+    height: 170px;
+    left: 100px;
+    background-color: rgba(255, 255, 255, 0.3);
+    align-items: center;
+    z-index: 100; /*poner por capas*/
+    top: -200px;
+    position: relative; /*relativo a donde se crea*/
+}
