@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./Practica_3/Recursos/Vacunacion_css.css">
+    </head>
+<body>
+
+<p>This example demonstrates how to assign an "onmouseenter" and "onmouseleave" event to a h1 element.</p>
+
+<h1 onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">Mouse over me</h1>
+<div><button class="btn" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">Message Now</button></div>
+
+<script>
+function mouseEnter() {
+  window.getElementsByClassName("btn").classList.add("shadow");
+}
+
+function mouseLeave() {
+  window.getElementsByClassName("btn").classList.remove("shadow");
+}
+
+</script>
+
+</body>
+</html>

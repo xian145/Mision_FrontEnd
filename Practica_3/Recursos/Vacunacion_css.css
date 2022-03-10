@@ -1,6 +1,6 @@
 html, body{
     font-family: Georgia, 'Times New Roman', Times, serif ;
-    background-color: rgb(87, 145, 172);
+    background-color: rgb(242, 246, 253);
     margin: 0;
     padding: 0;
     border: 0;
@@ -37,43 +37,95 @@ body{
 }
 
 .btn {
-    background-color: blue;
+    background-color: #3858D6;
     border: none;
     padding: 20px 30px;
     color: white;
+    font-size: 25px;
     text-align: center;
-    border-radius: 15px 50px 30px 5px; /*esquinas*/
+    border-radius: 5px 5px 5px 5px; /*esquinas*/
+    box-shadow: 0 0 10px rgba(57, 89, 215, 0.8);
 }
 
 .tbl {
-    border-spacing: 30px; /*espacio entre palabras*/
-    padding-right: 80px;
-    font-size: 25px;
+    border-spacing: 70px; /*espacio entre palabras*/
+    padding-right: 130px;
+    font-size: 28px;
+    color: #6D7B93;
 }
 
 .sec{
     display: flex;
-    background-color: rgb(0, 102, 255);
     justify-content: center; /*para que los div dentro de la seccion esten centrados*/
     z-index: 90;
+    position: relative;
+    width: 100%;
 }
 
 .izq {
-    background-color: blueviolet;
+    background-color: rgb(255, 255, 255);
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .der {
     width: 50%;
-    background: url("./doctora.jpg") no-repeat center center; /*centrar horizonta y verticalmente*/
-    min-height: 700px;
-    background-size: cover;
+    min-height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mayor {
+    color: #1F3E72;
+    font-size: 80px;
+    font-weight: bolder;
+    position: relative;
+    top: -85px;
+}
+
+.submayor {
+    color: #6D7B93;
+    font-size: 27px;
+    position: relative;
+    top: -60px;
+    left: -20px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    position: relative;
+}
+
+.six {
+    width: 60%;
+    justify-content: space-between;
+}
+
+.ic {
+    color: #FFD012; 
+    background-color: rgba(255, 252, 240, 1);
+    box-shadow: 0 0 10px rgba(255, 208, 18, 0.9);
+    border-radius: 30%;
+}
+
+.icon {
+    color: #3252D0;
+    background-color: rgb(230, 238, 255);
+    box-shadow: 0 0 10px rgba(40, 72, 198, 0.9);
+    border-radius: 30%;
 }
 
 .menu2 {
     display: flex;
-    justify-content: space-between; /*para separar a los extremos*/
-    width: 80%;
+    justify-content: center; /*para separar a los extremos*/
+    width: 60%;
     height: 170px;
     left: 100px;
     background-color: rgba(255, 255, 255, 0.3);
@@ -81,5 +133,80 @@ body{
     z-index: 100; /*poner por capas*/
     top: -200px;
     position: relative; /*relativo a donde se crea*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.column {
+    flex-direction: column
+}
+
+.marcas {
+    width: 300px;
+    height: auto;
+    opacity: 0.3;
+}
+
+.space_between {
+    justify-content: space-between;
+    z-index: 99;
+}
+
+.eighty {
+    width: 80%;
+}
+
+.left {
+    justify-content: left;
+    padding-left: 160px;
+}
+
+.trueleft {
+    justify-content: left;
+    padding-left: 20px;
+}
+
+.title {
+    font-size: 60px;
+    color: #1F3E72;
+    font-weight: bolder;
+}
+
+.sub {
+    color: #6D7B93;
+    font-size: 27px;
+    position: relative;
+}
+
+.square {
+    width: 320px;
+    height: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.subtitle {
+    color: #1F3E72;
+    font-size: 35px;
+}
+
+.ninty {
+    width: 90%;
+}
+
+.logo1 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #3050CE;
+}
+
+.titlesquare {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1F3E72;
+}
+
+.shadow {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 1);
+    font-size: 100px;
+    color: #FFD012;
+    background-color: #6D7B93;
+}

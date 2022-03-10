@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaccination</title>
+    <link rel="icon" href="./Recursos/inyeccion.png"> <!--agregar icono a la pestaña-->
     <link rel="stylesheet" href="./Recursos/Vacunacion_css.css">
     <script src="./Recursos/Vacuna.js"></script>
+    <script src="https://kit.fontawesome.com/a0a63ef0ad.js" crossorigin="anonymous"></script> <!--para agregar iconos-->
 
 </head>
 
 <body>
-    <header>
+    <header> <!--Menu desplegable-->
 
         <div class="menu">
 
-            <div class="logo">
+            <div class="logo" style="color: #3151CF;">
                 <h2>Vaccination</h2>
             </div>
 
@@ -36,49 +38,319 @@
 
     </header>
 
-    <section class="sec">
+    <section class="sec"><!--izquierda derecha-->
 
         <div class="izq">
-            <p>izquierda</p>
+            <div class="mayor">Fight Virus <br> With Vaccines</div>
+            <div class="submayor">Let's stop this pandemic by killing the virus <br> with a vaccine, don't let yourself and your <br> family get infected</div>
+            <div class="six">
+                <div><i class="fa-solid fa-shield-virus ic"></i>Best protection</div>
+                <div><i class="fa-solid fa-star ic"></i>Selected Vaccines</div>
+            </div>
+            <div class="six" style="justify-content: left; top: 100px;"><i class="fa-solid fa-clock icon"></i>Schedule your vaccination</div>
         </div>
 
-        <div class="der">
+        <div class="der" style="background: url(./Recursos/doctora.jpg) no-repeat center center; background-size: cover;">
             <p></p>
         </div>
 
     </section>
 
-    <section>
-        <div class="menu2">
+    <section> <!--Menu de cita-->
+        <div class="menu2"> <!--Segundo menu-->
 
-            <div class="logo">
-                <h2>Vaccination</h2>
-            </div>
-
-            <div>
-                <table class="tbl">
-                    <tr>
-                        <th>Database</th>
-                        <th>Education</th>
-                        <th>News</th>
-                        <th>Regulation</th>
-                        <th><button class="btn" onclick="alert('Abrham')">Hoax Buster</button></th>
-                    </tr>
-                </table>
+            <div style="width: 90%; justify-content: space-between;">
+                <div class="column"> <!--Lugar-->
+                    <div>
+                        <i class="fa-solid fa-location-dot icon"></i>Location
+                    </div>
+                    <div>
+                        <label>
+                            <input list="states" name="states" placeholder="Select your state">
+                        </label>
+                            <datalist id="states">
+                                <option value="Alabama"></option>
+                                <option value="Alaska"></option>
+                                <option value="Arizona"></option>
+                                <option value="Arkansas"></option>
+                                <option value="California"></option>
+                                <option value="Colorado"></option>
+                                <option value="Connecticut"></option>
+                                <option value="Delaware"></option>
+                                <option value="District of Columbia"></option>
+                                <option value="Florida"></option>
+                                <option value="Georgia"></option>
+                                <option value="Hawaii"></option>
+                                <option value="Idaho"></option>
+                                <option value="Illinois"></option>
+                                <option value="Indiana"></option>
+                                <option value="Iowa"></option>
+                                <option value="Kansas"></option>
+                                <option value="Kentucky"></option>
+                                <option value="Louisiana"></option>
+                                <option value="Maine"></option>
+                                <option value="Maryland"></option>
+                                <option value="Massachusetts"></option>
+                                <option value="Michigan"></option>
+                                <option value="Minnesota"></option>
+                                <option value="Mississippi"></option>
+                                <option value="Missouri"></option>
+                                <option value="Montana"></option>
+                                <option value="Nebraska"></option>
+                                <option value="Nevada"></option>
+                                <option value="New Hampshire"></option>
+                                <option value="New Jersey"></option>
+                                <option value="New Mexico"></option>
+                                <option value="New York"></option>
+                                <option value="North Carolina"></option>
+                                <option value="North Dakota"></option>
+                                <option value="Ohio"></option>
+                                <option value="Oklahoma"></option>
+                                <option value="Oregon"></option>
+                                <option value="Pennsylvania"></option>
+                                <option value="Rhode Island"></option>
+                                <option value="South Carolina"></option>
+                                <option value="South Dakota"></option>
+                                <option value="Tennessee"></option>
+                                <option value="Texas"></option>
+                                <option value="Utah"></option>
+                                <option value="Vermont"></option>
+                                <option value="Virginia"></option>
+                                <option value="Washington"></option>
+                                <option value="West Virginia"></option>
+                                <option value="Wisconsin"></option>
+                                <option value="Wyoming"></option>
+                            </datalist>
+                    </div>
+                </div>
+                <div class="column"> <!--Fecha-->
+                    <div>
+                        <i class="fa-solid fa-calendar-day icon"></i>Date
+                    </div>
+                    <div>
+                        <input type="datetime-local" name="dt1" id="dt1">
+                    </div>
+                </div>
+                <div class="column"> <!--Vacuna-->
+                    <div>
+                        <i class="fa-solid fa-pen icon"></i>Vaccine Type
+                    </div>
+                    <div>
+                        <label>
+                            <input list="vaccines" name="vaccines" placeholder="Select you vaccine">
+                        </label>
+                            <datalist id="vaccines">
+                            <option value="Pfizer">
+                            <option value="Moderna">
+                            <option value="SINOVAC">
+                            <option value="Astrazeneca">
+                            </datalist>
+                    </div>
+                </div>
+                <div> <!--boton-->
+                    <button class="btn">Submit</button>
+                </div>
             </div>
 
         </div>
     </section>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section class="sec" style="top: 70px;"> <!--Logotipos de vacunas-->
+        <div class="space_between eighty" style="top: -130px; ">
+            <div style="top: -90px;"><img src="./Recursos/astra.png" alt="Logo_Astraseneca" class="marcas"></div>
+            <div><img src="./Recursos/sinovac.png" alt="Logo_Moderna" class="marcas"></div>
+            <div><img src="./Recursos/pfizer.png" alt="Logo_Pfizer" class="marcas"></div>
+            <div><img src="./Recursos/moderna.png" alt="Logo_Sinovac" class="marcas"></div>
+        </div>
+    </section>
 
+    <section> <!--beneficions de vacunarse-->
+        <div class="column">
+            <div class="left title">Why should I vaccine?</div>
+            <br>
+            <div class="left sub">
+                in order to avoid any doubts about getting the COVID-19 <br>
+                vacine, indentify the follwing 4 benefits of COVID-19 <br>
+                vaccination:
+            </div>
+        </div>
+        <br>
+        <div>
+        <div class="eighty space_between">
+                <div class="column square">
+                    <div class="trueleft" style="font-size: 35px;"><i class="fa-solid fa-sliders fa-beat icon"></i></div><br>
+                    <div class="trueleft subtitle">Minimize the spread of viruses</div><br>
+                    <div class="trueleft sub">Vaccine has been proven effective to prevent someone from getting infected with Coronavirus</div>
+                </div>
+                <div class="column square">
+                    <div class="trueleft" style="font-size: 35px;"><i class="fa-solid fa-shield-virus icon fa-beat"></i></div><br>
+                    <div class="trueleft subtitle">Forming antibodies</div><br>
+                    <div class="trueleft sub">COVID-19 vaccine proven to help shape antibody response for immune system</div>
+                </div>
+                <div class="column square">
+                    <div class="trueleft" style="font-size: 35px;"><i class="fa-solid fa-user-group icon fa-beat"></i></div><br>
+                    <div class="trueleft subtitle">Protecting people nearby</div><br>
+                    <div class="trueleft sub">The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</div>
+                </div>
+                <div class="column square">
+                    <div class="trueleft" style="font-size: 35px;"><i class="fa-solid fa-chart-line icon fa-beat"></i></div><br>
+                    <div class="trueleft subtitle">Creating group inmmunity</div><br>
+                    <div class="trueleft sub">COVID-19 vaccination is also beneficial for creating group inmmunityor herd inmmunity</div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
 
+    <section class="sec"> <!--previo a vacunacion-->
+        <div class="izq" style="background: url(./Recursos/think.png) no-repeat center center; background-size: cover; height: 1185px;"> <!--izquierda-->
+        </div>
+        <div class="izq" > <!--derecha-->
+            <div class=" eighty column">
+                <div class="title">Preparations Before Vaccine</div><br><br>
+                <div class="sub">the succes of caccines is strongly influenced by the strenth of the body's immune system. Therefore, there are several things that can be tried to make the COVID-19 vaccine work:</div><br><br><br>
+                <div class="trueleft">
+                    <div>
+                        <div class="trueleft"><i class="fa-solid fa-ban icon"></i></div><br>
+                    </div>
+                    <div style="padding-left: 15px;">
+                        Avoid alcoholic beverage
+                    </div>
+                </div><br><br>
+                
+                <div class="trueleft">
+                    <div>
+                        <div class="trueleft"><i class="fa-solid fa-ban icon"></i></div><br>
+                    </div>
+                    <div style="padding-left: 15px;">
+                        Avoid stress
+                    </div>
+                </div><br><br>
 
+                <div class="trueleft">
+                    <div>
+                        <div class="trueleft"><i class="fa-solid fa-chart-column icon"></i></div><br>
+                    </div>
+                    <div style="padding-left: 15px;">
+                        Eat healthy food
+                    </div>
+                </div><br><br>
 
+                <div class="trueleft">
+                    <div>
+                        <div class="trueleft"><i class="fa-solid fa-check-to-slot icon"></i></div><br>
+                    </div>
+                    <div style="padding-left: 15px;">
+                        Get enough sleep
+                    </div>
+                </div><br><br>
 
-    <button>hola</button>
+                <div class="trueleft">
+                    <div>
+                        <div class="trueleft"><i class="fa-solid fa-heart-pulse icon"></i></div><br>
+                    </div>
+                    <div style="padding-left: 15px;">
+                        Exercise or physical activity
+                    </div>
+                </div><br><br>
 
+            </div>
+        </div>
+    </section>
+
+    <section class="sec"> <!--contacto de emergencia-->
+        <div class="izq"> <!--izquierda-->
+            <div class="column eighty">
+                <div class="column">
+                    <div class="title trueleft"> Emergency Contact</div><br><br>
+                    <div class="sub trueleft">Contact one of the contacts below if you or your family feel unwell and have similar symptoms such as COVID-19, make sure you also take care of yourself before reporting us:</div><br><br>
+                </div>
+                <div  class="column">
+                    <div class="ninty space_between">
+                        <div class="column square">
+                            <div>
+                                <div><i class="fa-solid fa-phone icon true"></i></div>
+                                <div class="trueleft titlesquare">Call</div>
+                            </div><br>
+                            <div class="sub">0.21.123.145.14</div><br>
+                            <div><button class="btn">Call Now</button></div>
+                        </div>
+                        <div class="column square">
+                            <div>
+                                <div><i class="fa-solid fa-comment-medical icon"></i></div>
+                                <div class="trueleft titlesquare">Chat</div>
+                            </div><br>
+                            <div class="sub">0.21.123.145.14</div><br>
+                            <div><button class="btn">Chat Now</button></div>
+                        </div>
+                    </div><br>
+                    <div class="ninty space_between">
+                        <div class="column square">
+                            <div>
+                                <div><i class="fa-solid fa-video icon"></i></div>
+                                <div class="trueleft titlesquare">Video Call</div>
+                            </div><br>
+                            <div class="sub">0.21.123.145.14</div><br>
+                            <div><button class="btn">Video Call Now</button></div>
+                        </div>
+                        <div class="column square">
+                            <div>
+                                <div><i class="fa-solid fa-comment-dots icon"></i></div>
+                                <div class="trueleft titlesquare">Message</div>
+                            </div><br>
+                            <div class="sub">0.21.123.145.14</div><br>
+                            <div><button class="btn">Message Now</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="izq" style="background: url(./Recursos/smile.png) no-repeat center center; background-size: cover; height: 1332px;"> <!--derecha-->
+            <div></div>
+        </div>
+    </section>
+
+    <section style="background-color: white; height: 100px;"></section><br><br><br>
+
+    <footer> <!--final-->
+        <div class="space_between">
+            <div class="column trueleft" style="width: 300px; padding-left: 100px;">
+                <div class="trueleft logo1">Vaccination</div><br>
+                <div class="trueleft sub">Our goal is to help the world free from the ongoing pandemic</div>
+            </div>
+            <div>
+                <div class="column" style="padding-right: 100px">
+                    <div class="trueleft titlesquare">About</div><br>
+                    <div class="trueleft sub">About us</div><br>
+                    <div class="trueleft sub">Features</div><br>
+                    <div class="trueleft sub">News & Blog</div>
+                </div>
+                <div class="column" style="padding-right: 100px">
+                    <div class="trueleft titlesquare">Company</div><br>
+                    <div class="trueleft sub">How We Work?</div><br>
+                    <div class="trueleft sub">Capital</div><br>
+                    <div class="trueleft sub">Security</div>
+                </div>
+                <div class="column" style="padding-right: 100px">
+                    <div class="trueleft titlesquare">Support</div><br>
+                    <div class="trueleft sub">FAQs</div><br>
+                    <div class="trueleft sub">Support Center</div><br>
+                    <div class="trueleft sub">Contact Us</div>
+                </div>
+            </div>
+        </div>
+        <div class="space_between" style="padding-top: 100px;">
+            <div class="column trueleft">
+                <div class="trueleft sub">@2022 Vaccination. All rights reserved</div>
+            </div>
+            <div>
+                <div class="trueleft sub">Terms & Agreements</div>
+                <div class="trueleft sub"> Privacy policy</div>
+            </div>
+        </div><br><br>
+    </footer>
 
 </body>
+
 
 </html>
