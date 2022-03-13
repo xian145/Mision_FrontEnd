@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./Recursos/pokeapi.js"></script>
+    <title>PokeDex</title>
+    
 </head>
 <body>
     <h1>Pokedex LaunchX</h1>
-    <input type="text" placeholder="Pikachu" name="PokeName" id="PokeName"><br>
+    <input type="text" placeholder="Pikachu" name="PokeName" id="PokeName"><br> <!--aqui pondremos el nombre del pokemon que estamos buscando-->
     <img src="./Recursos/luxuryball.png" alt="LucuryBall" height="150px" width="150px" id="PokeImage"><br>
-    <button onclick="imp()">Cambiar Pokemon</button> <!--que no se olvide de poner los parentesis para dar a entender que es una funcion-->
+    <button onclick="BuscarPokemon()">Cambiar Pokemon</button> <!--que no se olvide de poner los parentesis para dar a entender que es una funcion-->
+
+<footer>
+    <script src="./Recursos/pokeapi.js"></script>
+</footer>
 
 </body>
 </html>
