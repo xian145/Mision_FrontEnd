@@ -6,13 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokeDex</title>
     
+    <link rel="stylesheet" href="./Recursos/pokedex_css.css">
+    
 </head>
 <body>
     <h1>Pokedex LaunchX</h1>
-    <input type="text" placeholder="Pikachu" name="PokeName" id="PokeName"><br> <!--aqui pondremos el nombre del pokemon que estamos buscando-->
-    <img src="./Recursos/luxuryball.png" alt="LucuryBall" height="150px" width="150px" id="PokeImage"><br>
-    <button onclick="BuscarPokemon()">Cambiar Pokemon</button> <!--que no se olvide de poner los parentesis para dar a entender que es una funcion-->
+    <form action="" onsubmit="BuscarPokemon(event)">
+        <input type="text" placeholder="Pikachu" name="PokeName" id="PokeName" autocomplete="off"><br> <!--aqui pondremos el nombre del pokemon que estamos buscando-->
+    </form>
+    <div id="PokeDex" style="background-color: aqua;">
 
+        <div id="PName" style="background-color: blue;">Pokedex</div> <!--Nombre del pokemon-->
+        <div id="Image" style="background-color: blueviolet;"><img src="./Recursos/luxuryball.png" alt="LuxuryBall" height="200px" width="200px" id="PokeImage"><br></div> <!--Imagen del pokemon-->
+        <div id="PNumber" style="background-color: brown;"></div> <!--Numero del pokemon-->
+        <div id="PTypes" style="background-color: chartreuse;"></div> <!--Tipos del pokemon-->
+        <div id="PStats" style="background-color: cornflowerblue;"></div> <!--Stats del pokemon-->
+        <div id="PAbilities" style="background-color: coral;"></div> <!--Habilidades del pokemon-->
+        <div id="PHeight" style="background-color: darkkhaki;"></div> <!--Tamano del pokemon-->
+        <div id="PWeight" style="background-color: darkgreen;"></div> <!--Peso del pokemon-->
+
+    </div>
+    
 <footer>
     <script src="./Recursos/pokeapi.js"></script>
 </footer>
