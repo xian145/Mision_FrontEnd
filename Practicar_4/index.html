@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex</title>
+    <link rel="stylesheet" href="./Recursos/pokedex_css.css">
+    
+</head>
+<body>
+    <div class="Head" >
+        <div><h1>Pokedex LaunchX</h1></div><br>
+        <div><form action="" onsubmit="BuscarPokemon(event)">
+            <input type="text" class="Poke" placeholder="Pikachu or number" name="PokeName" id="PokeName" autocomplete="off"><br> <!--aqui pondremos el nombre del pokemon que estamos buscando-->
+        </form></div>
+    </div><br>
+    
+    <div class="PokeDex" id="PokeDex">
+
+        <h2><div class="PName" id="PName">Pokedex</div></h2><br> <!--Nombre del pokemon-->
+        <div class="Image" id="Image"><img src="./Recursos/luxuryball.png" alt="LuxuryBall" height="250px" width="250px" id="PokeImage"><br></div> <!--Imagen del pokemon-->
+        <div class="PNumber" id="PNumber"></div> <!--Numero del pokemon-->
+        <div class="PTypes" id="PTypes"></div> <!--Tipos del pokemon-->
+        <div class="abi abis">Abilities</div>
+        <div class="PAbilities" id="PAbilities"></div> <!--Habilidades del pokemon-->
+        <div class="PStats" id="PStats"></div> <!--Stats del pokemon-->
+        <div class="PHWeight">
+            <div class="PHeight" id="PHeight"></div> <!--Tamano del pokemon-->
+            <div class="PWeight" id="PWeight"></div> <!--Peso del pokemon-->
+        </div>
+        
+
+    </div><br><br><br>
+    
+<footer>
+    <script src="./Recursos/pokeapi.js"></script>
+</footer>
+
+</body>
+</html>

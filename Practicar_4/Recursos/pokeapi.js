@@ -6,7 +6,6 @@ const PokeAbilities = document.querySelector('#PAbilities')
 const PokeHeight = document.querySelector('#PHeight')
 const PokeWeight = document.querySelector('#PWeight')
 
-
 const BuscarPokemon = event => {
     event.preventDefault(); //evitamos el submit al entrar a la pagina
     const PokeName = document.getElementById('PokeName') //va a leer el documento de HTML y buscar el id con el nombre que le pongamos en los parentesis
@@ -19,11 +18,6 @@ const BuscarPokemon = event => {
         PokeInfo(data) //Llamo a la funcion PokeInfo que lo que hara sera sacar toda la info que ocupo del pokemon
     })
     .catch(err => PokeError()) //en caso de encontrar CUALQUIER error llama a la funcion que se define abajo
-}
-
-const ImageError = (imagen) => {
-    const PokeImage = document.getElementById('PokeImage') //se crea una constante que vale lo que se agarra del HTML el id que tenga PokeImage
-    PokeImage.src = (imagen); //lo que hara aqui con el elemento que agarro anteriormente es cambiar la imagen con el nuevo URL
 }
 
 const ChangeImage = (data) => { 
@@ -41,11 +35,13 @@ const ChangeImage = (data) => {
 }
 
 const PokeInfo = (data) => {
+    let abi = document.querySelector(".abis")
+    abi.classList.remove("abi")
     const {types, stats, abilities} = data; //va a sacar la info de stats y types de data y los guardara justamente en esas mismas variables
     PokeName.textContent = data.name; //Estoy cambiando lo que se encuentra en div con id "PName" por la info que se saca de la api con data.name
     PokeNumber.textContent = `No ${data.id}` //Agrego el numero del pokemon dentro del div que tiene el id "PNumber"
-    PokeHeight.textContent = `${data.height/10} Meters`
-    PokeWeight.textContent = `${data.weight/10} Kg`
+    PokeHeight.textContent = `Height: ${data.height/10} Meters`
+    PokeWeight.textContent = `Weight: ${data.weight/10} Kg`
     PokemonTypes(types) //Llama a al funcion definida abajo
     PokemonStats(stats) //Llama a al funcion definida abajo
     PokemonAbilities(abilities) //Llama a la funcion definida abajo
@@ -92,6 +88,10 @@ const PokeError = () => {
     PokeStats.textContent = ''
     PokeNumber.textContent = ''
     PokeAbilities.textContent = ''
+    PokeHeight.textContent =''
+    PokeWeight.textContent =''
+    let abi = document.querySelector(".abis")
+    abi.classList.add("abi")
 }
 
 const typeColors = {
@@ -111,5 +111,6 @@ const typeColors = {
     dragon: '#DA627D',
     steel: '#1D8A99',
     fighting: '#2F2F2F',
+    fairy: '#F0A786',
     default: '#2A1A1F',
 }; 

@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+body {
+    background-color: #76c8ff;
+}
+
+.Head {
+    display: flex;
+    align-items: center; /*Para centrar de manera vertical*/
+    flex-direction: column;
+}
+
+.Poke {
+    font-size: 15px;
+}
+
+.PokeDex {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center; /*Para centrar de manera vertical*/
+    height: fit-content;
+    max-width: 85%;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: rgb(165, 143, 143);
+    border: 1px solid black;
+}
+
+.PokeDex::before { /*lo que hace en realidad es hacer lo mismo que .PokeDex pero lo pone de fondo y una capa abajo con z-index*/
+    content: ''; /*si pon lo ponemos no aparecera el fond*/
+    background: radial-gradient(black 33%, transparent 33%);
+    background-size: 4px 4px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.PTypes {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.PTypes div{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px dashed rgb(102, 102, 102);
+}
+
+.PStats {
+    width: 80%;
+}
+
+.PStats div { /*es necesario poner ese div, ya que le decimos que a cada div le tiene que aplicar eso, y en js mete un div con dos divs dentro de este div*/
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.PAbilities {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.PHWeight {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.abi {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .Poke {
+        font-size: 25px;
+    }
+    
+    .PokeDex::before { /*lo que hace en realidad es hacer lo mismo que .PokeDex pero lo pone de fondo y una capa abajo con z-index*/
+        left: 15px;
+        top: 15px;
+    }
+    
+    h1 {
+        font-size: 60px;
+    }
+    
+    h2 {
+        font-size: 50px;
+    }
+
+    .PStats div {
+        font-size: 30px;
+    }
+    
+    .PAbilities {
+        font-size: 30px;
+    }
+
+    .abis {
+        font-size: 30px;
+    }
+
+    .PNumber {
+        font-size: 25px;
+    }
+
+    .PTypes {
+        font-size: 30px;
+    }
+
+    .PHWeight {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .PokeDex {
+        max-width: 40%;
+    }
+}
