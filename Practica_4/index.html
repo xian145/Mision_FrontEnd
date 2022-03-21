@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokeDex</title>
     <link rel="stylesheet" href="./Recursos/pokedex_css.css">
+    <link rel="icon" href="./Recursos/pokeball.png">
     
 </head>
 <body>
     <div class="Head" >
         <div><h1>Pokedex LaunchX</h1></div><br>
         <div><form action="" onsubmit="BuscarPokemon(event)">
-            <input type="text" class="Poke" placeholder="Pikachu or number" name="PokeName" id="PokeName" autocomplete="off"><br> <!--aqui pondremos el nombre del pokemon que estamos buscando-->
+            <input type="text" class="Poke" placeholder="Pokemon or number" name="PokeName" id="PokeName" autocomplete="off"><br> <!--aqui pondremos el nombre del pokemon que estamos buscando-->
         </form></div>
     </div><br>
     
     <div class="PokeDex" id="PokeDex">
 
+        <div class="back" id="back"><img src="./Recursos/fondo.png" alt="" class="BackG PokeNo"></div>
         <h2><div class="PName" id="PName">Pokedex</div></h2><br> <!--Nombre del pokemon-->
-        <div class="Image" id="Image"><img src="./Recursos/luxuryball.png" alt="LuxuryBall" height="250px" width="250px" id="PokeImage"><br></div> <!--Imagen del pokemon-->
+        <div class="Image" id="Image"><img src="./Recursos/luxuryball.png" alt="LuxuryBall" height="250px" width="250px" id="PokeImage" class="PokeImage"><br></div> <!--Imagen del pokemon-->
         <div class="PNumber" id="PNumber"></div> <!--Numero del pokemon-->
         <div class="PTypes" id="PTypes"></div> <!--Tipos del pokemon-->
         <div class="abi abis">Abilities</div>
@@ -31,7 +33,7 @@
         </div>
         
 
-    </div><br><br><br>
+    </div><br><br>
     
 <footer>
     <script src="./Recursos/pokeapi.js"></script>

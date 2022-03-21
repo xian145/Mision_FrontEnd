@@ -37,6 +37,8 @@ const ChangeImage = (data) => {
 const PokeInfo = (data) => {
     let abi = document.querySelector(".abis")
     abi.classList.remove("abi")
+    let PokeNo = document.querySelector(".BackG")
+    PokeNo.classList.remove("PokeNo")
     const {types, stats, abilities} = data; //va a sacar la info de stats y types de data y los guardara justamente en esas mismas variables
     PokeName.textContent = data.name; //Estoy cambiando lo que se encuentra en div con id "PName" por la info que se saca de la api con data.name
     PokeNumber.textContent = `No ${data.id}` //Agrego el numero del pokemon dentro del div que tiene el id "PNumber"
@@ -75,7 +77,7 @@ const PokemonAbilities = (abilities) => {
     PokeAbilities.innerHTML = '' //para limpiar tras cada busqueda
     abilities.forEach(ability => {
         let AbilityElmnt = document.createElement('div') //crea un div para colocar algo despues
-        AbilityElmnt.textContent = ability.ability.name //le asigna el valor a AbilityElmnt de lo que se encunetre en ability name que saca de la api
+        AbilityElmnt.textContent = `/ ${ability.ability.name}`//le asigna el valor a AbilityElmnt de lo que se encunetre en ability name que saca de la api
         PokeAbilities.appendChild(AbilityElmnt) //agrego lo que acabo de guardar en la variable al html con id PAbilities
     })
 }

@@ -6,13 +6,29 @@
 }
 
 body {
-    background-color: #76c8ff;
+    background: rgb(252,208,113);
+    background: radial-gradient(circle, rgba(252,208,113,1) 24%, rgba(45,171,253,1) 100%);
 }
 
 .Head {
     display: flex;
     align-items: center; /*Para centrar de manera vertical*/
     flex-direction: column;
+}
+
+.back {
+    width: 100%;
+    height: 0px;
+}
+
+.BackG {
+    width: 100%;
+    height: 206px;
+    border-radius: 4px;
+}
+
+.PokeNo {
+    display: none;
 }
 
 .Poke {
@@ -29,9 +45,10 @@ body {
     border-radius: 4px;
     color: #000;
     text-align: center;
-    padding: 10px;
+    padding: 0px;
     margin: 0 auto;
-    background-color: rgb(165, 143, 143);
+    background: rgb(118,118,166);
+    background: linear-gradient(0deg, rgba(118,118,166,1) 0%, rgba(90,90,200,1) 0%, rgba(127,173,113,1) 48%);
     border: 1px solid black;
 }
 
@@ -49,6 +66,11 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 1);
 }
 
+.PokeImage {
+    width: 150px;
+    height: 150px;
+}
+
 h1 {
     font-size: 40px;
 }
@@ -61,6 +83,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-content: space-between;
+    text-shadow: 0 0 3px #FF0000, 0 0 8px #d86df8;
 }
 
 .PTypes div{
@@ -101,6 +124,15 @@ h2 {
 
 @media only screen and (min-width: 768px) {
 
+    .BackG {
+        height: 330px;
+    }
+
+    .PokeImage {
+        width: 250px;
+        height: 250px;
+    }
+
     .Poke {
         font-size: 25px;
     }
@@ -110,6 +142,10 @@ h2 {
         top: 15px;
     }
     
+    .PokeDex {
+        max-width: 70%;
+    }
+
     h1 {
         font-size: 60px;
     }
